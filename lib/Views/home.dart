@@ -11,15 +11,21 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6),
-        child: Column(
-          children: [
-        
-            Method.instaAppBar(),
-            const SizedBox(height:6),
-            story(),
-            const SizedBox(height:8),
-            post()
-          ],
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+          
+              Method.instaAppBar(),
+              const SizedBox(height:6),
+              story(),
+              const SizedBox(height:8),
+              post(),
+              post(),
+              post(),
+              
+            ],
+          ),
         ),
       ),
     );
