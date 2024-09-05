@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/Controllers/method.dart';
-import 'package:instagram_clone/Widgets/post.dart';
-import 'package:instagram_clone/Widgets/story.dart';
+import 'package:instagram_clone/Widgets/Pages/Home/post.dart';
+import 'package:instagram_clone/Widgets/Pages/Home/story.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
