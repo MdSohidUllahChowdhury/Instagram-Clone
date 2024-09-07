@@ -14,10 +14,10 @@ class Method{
                 Row(
                   children: [
                     IconButton(onPressed: (){}, 
-                    icon:const Icon(Icons.favorite_border,size: 30,)
+                    icon:const Icon(Icons.favorite_border,size: 30,color: Colors.white,)
                     ),
                     IconButton(onPressed: (){}, 
-                    icon:const Icon(Icons.telegram_rounded,size: 30,)
+                    icon:const Icon(Icons.telegram_rounded,size: 30,color: Colors.white,)
                     ),
                   ],
                 )
@@ -37,10 +37,10 @@ class Method{
                 Row(
                   children: [
                     IconButton(onPressed: (){}, 
-                    icon:const Icon(Icons.add_box_outlined,size: 30,)
+                    icon:const Icon(Icons.add_box_outlined,size: 30,color: Colors.white,)
                     ),
                     IconButton(onPressed: (){}, 
-                    icon:const Icon(Icons.menu,size: 30,)
+                    icon:const Icon(Icons.menu,size: 30,color: Colors.white,)
                     ),
                   ],
                 )

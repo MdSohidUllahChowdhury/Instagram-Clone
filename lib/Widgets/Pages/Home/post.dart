@@ -47,7 +47,7 @@ Widget post() {
             ],
           ),
           Row(
-            children: [Icon(Icons.bookmark)],
+            children: [Icon(Icons.bookmark_border)],
           ),
         ],
       )

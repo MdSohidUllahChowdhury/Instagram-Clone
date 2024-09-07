@@ -14,7 +14,8 @@ class RoutesControl extends StatefulWidget {
 
 class _RoutesControlState extends State<RoutesControl> {
  
-  int onpageindex = 4; //? Where to index start 
+  int onpageindex = 0; //? Where to index start
+  
   final pagedata =[
      const Home(),
      const Search(),
@@ -30,27 +31,27 @@ class _RoutesControlState extends State<RoutesControl> {
 
        bottomNavigationBar: 
        BottomNavigationBar(
-        items:const[
-        BottomNavigationBarItem(icon: Icon(Icons.home_sharp),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.search_outlined),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.add_box_outlined),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.slow_motion_video_rounded),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.person_outline_sharp),label: ''),
-       ],
         currentIndex: onpageindex,
-         onTap: (gotopage){
-          setState(() {
-            onpageindex = gotopage;
+        onTap: (value){
+           setState(() {
+            onpageindex = value;
           });
          },
-
+        
+        items:const[
+         BottomNavigationBarItem(icon: Icon(Icons.home_sharp),label: ''),
+         BottomNavigationBarItem(icon: Icon(Icons.search_outlined),label: ''),
+         BottomNavigationBarItem(icon: Icon(Icons.add_box_outlined),label: ''),
+         BottomNavigationBarItem(icon: Icon(Icons.slow_motion_video_rounded),label: ''),
+         BottomNavigationBarItem(icon: Icon(Icons.person_outline_sharp),label: ''),
+         ],
         selectedFontSize: 8,
         unselectedFontSize: 8,
-        iconSize: 20,
+        iconSize: 22,
         elevation: 0,
         backgroundColor: const Color.fromARGB(242, 0, 0, 0),
         selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,   
+        unselectedItemColor: Colors.grey, 
        ),
     );
   }
